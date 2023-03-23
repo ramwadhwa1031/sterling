@@ -20,7 +20,7 @@
   margin: 2px 0;
   font-size: 13px;
   font-weight: 700;
-  transition: background 0.07s, color 0.07s, border-color 0.07s;
+  transition: 0.07s, color 0.07s, border-color 0.07s;
 }
 
 .cookies-eu-banner button:hover {

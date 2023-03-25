@@ -2142,6 +2142,11 @@ select {
   margin-top: 5px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .main-menu ul li {
+    display: inline-block;
+    margin-left: 29px;
+    position: relative;
+}
   .header-location {
     text-align: center;
   }
@@ -2299,6 +2304,7 @@ select {
   display: inline-block;
   margin-left: 40px;
   position: relative;
+ 
   /*submenu start*/
   /*submenu end*/
 }

@@ -31,12 +31,15 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="assets/css/main.css">
+
+
 <script type="text/javascript">
     function greeting(){
-        alert("Query Submitted Successfully!. Contact You Shortly");
+        alert("Registered Successfully!  Contact You Shortly");
         location.reload();
     }
 </script>
+
 </head>
 
 <body>
@@ -197,12 +200,12 @@
 <!-- header area end here -->
 
 <!-- page title area start -->
-<div class="page-title__area pt-110" style="background-image: url(assets/img/about-us/ab-us.jpg);">
+<div class="page-title__area pt-110" style="background-image: url(assets/img/about-us/job_bg.jpeg);">
     <div class="container">
         <div class="row">
            <div class="col-xxl-12">
               <div class="page__title-wrapper text-center">
-                 <h3 class="pb-100">Contact Us</h3>
+                 <h3 class="pb-100">Find Job</h3>
               </div>
            </div>
         </div>
@@ -211,7 +214,7 @@
         <ul class="breadcrumb justify-content-center pt-20 pb-20">
            <li class="bd-items"><a href="index.html">Home</a></li>
            <li class="bd-items bdritems">|</li>
-           <li class="bd-items"> <a href="">Contact Us</a></li>
+           <li class="bd-items"> <a href="">Find Job</a></li>
         </ul>
      </nav>
 </div>
@@ -221,54 +224,64 @@
 
 <!-- Contact  area start -->
 <div class="contact__area">
-    <div class="contact__vmap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.6932492082!2d-0.3817798915521863!3d51.528307976846556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1678104044497!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!-- <iframe src="https://maps.google.com/maps?hl=en&amp;q=Dhaka+()&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"></iframe> -->
-    </div>
     <div class="container">
         <div class="row">
-            <div class="col-xxl-6 col-xl-6 col-lg-6"></div>
-            <div class="col-xl-6 col-xl-6 col-lg-6">
+            <div class="col-xxl-12 col-xl-12 col-lg-12"></div>
+            <div class="col-xl-12 col-xl-12 col-lg-12">
                 <div class="contact__form pt-110">
                     <h2 class="contact-form__title">
-                        Get in <span>Touch </span>
+                        Find Job <span> </span>
                     </h2>
-                    <form id="contact-form" action="" onsubmit="greeting()">
+                    <form id="contact-form" onsubmit="greeting()" method="">
                         <div class="row">
                             <div class="col-xl-6">
-                                <input name="name" class="contact__input" type="text" placeholder="First Name">
+                                <input name="name" class="contact__input" type="text" placeholder="Enter Name" required>
                             </div>
                             <div class="col-xl-6">
-                                <input name="lname" class="contact__input" type="text" placeholder="Last Email">
+                                <input name="email" class="contact__input" type="email" placeholder="Enter Email" required>
                             </div>
                         </div>
+                        
                         <div class="row">
-                            <div class="col-xl-6">
-                                <input name="Profession" class="contact__input" type="text" placeholder="Phone">
+                            <div class="col-xl-12">
+                                <input name="phoneno" class="contact__input" type="text" placeholder="Enter Phone no" required>
                             </div>
-                            <div class="col-xl-6">
-                                <input name="Profession" class="contact__input" type="email" placeholder="Email">
-                            </div>
+                            
                         </div>
                         <div class="row">
-                        <div class="col-xl-12">
-                            <select class="contact__input">
+                            <div class="col-xl-12">
+                                <input name="postcode" class="contact__input" type="text" placeholder="Post Code" required>
+                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <input name="cv" class="file_cv" type="file" placeholder="Upload CV" required>
+                             </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-xl-6">
+                            <select class="contact__input" name="Profession">
                                 <option value="" disabled selected>Profession....</option>
                                 <option value="">Health Care Assistant(HCA)</option>
                                 <option value="">Nurse</option>
                                 <option value="">Support Worker</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-xl-6">
+                            <select class="contact__input" name="shift-time" >
+                                <option value="" disabled selected>Shift Time...</option>
+                                <option value="">Day</option>
+                                <option value="">Night</option>
+                                
                                
                             </select>
                         </div>
                         </div>
+                        
                         <div class="row">
                             <div class="col-xl-12">
-                                <textarea name="message" class="contact__input txt-area " cols="30" rows="10" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <button class="theme-btn" type="submit">Submit Now</button>
+                                <button class="theme-btn" type="submit">Submit Query</button>
                             </div>
                         </div>
                     </form>
@@ -280,37 +293,7 @@
 </div> 
 <!-- Contact  area end -->
 
-<!-- Contact group info start -->
-<div class="contact-group-area pb-70 pt-145">
-    <div class="container">
-        <div class="row">
-            <div class="col-xxl-4 col-xl-6 col-lg-6 ">
-                
-            </div>
-            <div class="col-xxl-4 col-xl-6 col-lg-6">
-                <div class="contact__gpinfo grey-soft2-bg mb-50">
-                    <div class="contact__gpinfo-icon text-center">
-                        <i class="flaticon-pin"></i>
-                    </div>
-                    <div class="contact__gpinfo-content">
-                        <h3 class="contact__gpinfo-content-title text-center mb-25">
-                             Office Address
-                        </h3>
-                        <ul>
-                            <li><a href="contact.html"> <span>Address</span>: <p> RUISLIP,UK 14283101</p></a></li>
-                            <li><a href="mailto"> <span>Email</span>: <p> <span class="__cf_email__" data-cfemail="264f48404966435e474b564a430845494b">support@sterlingstaffing.co.uk</span></p></a></li>
-                            <li><a href="tel:07881301444"> <span>Phone</span>: <p>07881301444</p> </a></li>
-                            <li><a href="#"><span>Opening</span>: <p>Sun - Thu : 10 AM - 10 PM</p> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xxl-4 col-xl-6 col-lg-6">
-                
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- Contact group info end -->
 
 

@@ -1,3 +1,29 @@
+.file_cv{
+  margin-bottom: 15px;
+}
+
+
+.blink-button {
+  animation: blink 1s infinite;
+  color: #fff;
+  background-color: #8c2724;
+  border: none;
+  padding: 7px 31px;
+  font-size: 16px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+    /* background-color: #8c2724; */
+}
+
+.diff{
+  margin-left: 10px;
+}
+
+/* */
 .cookies-eu-banner {
   background: #444;
   color: #fff;
@@ -2139,7 +2165,8 @@ select {
 
 .header-location {
   text-align: right;
-  margin-top: 5px;
+
+  padding: 0 11px 0 0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .main-menu ul li {

@@ -2129,11 +2129,8 @@ select {
     display: block;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .header-top {
-    display: block;
-  }
-}
+
+
 
 .header-top-left ul li {
   font-weight: 400;

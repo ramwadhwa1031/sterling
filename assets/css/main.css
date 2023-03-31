@@ -2129,7 +2129,11 @@ select {
     display: block;
   }
 }
-
+@media (min-width: 200px) {
+  .header-top {
+    display: block;
+  }
+}
 
 
 .header-top-left ul li {

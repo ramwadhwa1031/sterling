@@ -2121,17 +2121,17 @@ select {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-top {
-    display: none;
+    display: block;
   }
 }
 @media (max-width: 767px) {
   .header-top {
-    display: none;
+    display: block;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .header-top {
-    display: none;
+    display: block;
   }
 }
 
